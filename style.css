@@ -1,0 +1,30 @@
+body{
+    font-family: Arial;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input, textarea, select, button{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.task-card{
+    border: 1px solid gray;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+small{
+    color: red;
+}
