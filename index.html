@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Task Manager Application</h1>
+
+    <form id="taskForm">
+
+        <input type="hidden" id="taskId">
+
+        <input type="text" id="name" placeholder="Task Name">
+        <small id="nameError"></small>
+
+        <textarea id="description" placeholder="Description"></textarea>
+        <small id="descriptionError"></small>
+
+        <input type="text" id="assignedTo" placeholder="Assigned To">
+        <small id="assignedError"></small>
+
+        <input type="date" id="dueDate">
+        <small id="dateError"></small>
+
+        <select id="status">
+            <option value="">Select Status</option>
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Review">Review</option>
+            <option value="Done">Done</option>
+        </select>
+        <small id="statusError"></small>
+
+        <button type="submit" id="submitBtn">Save</button>
+
+    </form>
+
+    <hr>
+
+    <div id="taskList"></div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
